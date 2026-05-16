@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MajeCos — уход за собой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__container">
+        <div class="header__logo">MajeCos</div>
+        <ul class="nav">
+            <li class="nav__item"><a href="/" class="nav__link nav__link_active">Главная</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">Уход за лицом</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">Уход за кожей</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">Уход за волосами</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">Составы</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <!-- баннер карусель с перелистыванием -->
+        <section class="banner">
+            <div class="carousel">
+                <div class="carousel__slides" id="carouselSlides">
+                    <div class="carousel__slide">
+                        <div class="carousel__image">
+                            <img src="/majecos/assets/gel.png" alt="Гель для душа">
+                        </div>
+                        <div class="carousel__info">
+                            <h3 class="carousel__title">Гель для душа</h3>
+                            <p class="carousel__description">Ограниченная версия ароматного геля для душа, содержащая в <strong>5 раз</strong> больше увлажняющих компонентов по сравнению с предыдущими версиями.</p>
+                            <a href="#" class="carousel__button">Перейти в магазин</a>
+                        </div>
+                    </div>
+                    <div class="carousel__slide">
+                        <div class="carousel__image">
+                            <img src="/majecos/assets/essence.png" alt="Эссенция">
+                        </div>
+                        <div class="carousel__info">
+                            <h3 class="carousel__title">Очищающая эссенция для лица</h3>
+                            <p class="carousel__description">Инновационные эссенции-салфетки от <strong>House of Huh</strong> — мощное средство для очищения кожи в удобном формате с пропиткой.</p>
+                            <a href="#" class="carousel__button">Перейти в магазин</a>
+                        </div>
+                    </div>
+                    <div class="carousel__slide">
+                        <div class="carousel__image">
+                            <img src="/majecos/assets/cream.png" alt="Защитный крем">
+                        </div>
+                        <div class="carousel__info">
+                            <h3 class="carousel__title">Защитный крем от солнца</h3>
+                            <p class="carousel__description">Солнцезащитный крем <strong>Heart Pink Tone Up Sun Cream SPF50+ PA++++</strong> обеспечивает надежную защиту от ультрафиолетовых лучей, а также ухаживает за кожей, придавая ей ровный тон и здоровое сияние.</p>
+                            <a href="#" class="carousel__button">Перейти в магазин</a>
+                        </div>
+                    </div>
+                    <div class="carousel__slide">
+                        <div class="carousel__image">
+                            <img src="/majecos/assets/lotion.png" alt="Увлажняющий лосьон">
+                        </div>
+                        <div class="carousel__info">
+                            <h3 class="carousel__title">Увлажняющий лосьон</h3>
+                            <p class="carousel__description">Мощный питательный состав на основе масел и экстрактов интенсивно восстанавливает и увлажняет кожу.</p>
+                            <a href="#" class="carousel__button">Перейти в магазин</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__btn carousel__btn_prev" id="prevBannerBtn">‹</button>
+                <button class="carousel__btn carousel__btn_next" id="nextBannerBtn">›</button>
+                <div class="carousel__dots" id="bannerDots"></div>
+            </div>
+        </section>
+
+        <!-- WHAT ON REELS? -->
+        <section class="reels">
+            <h2 class="reels__title">What on reels?</h2>
+            <p class="reels__subtitle">Листай, смотри, вдохновляйся</p>
+            
+            <div class="reels__carousel">
+                <button class="reels__btn reels__btn_prev" id="reelsPrevBtn">‹</button>
+                <div class="reels__track" id="reelsTrack">
+                    <div class="reels__container" id="reelsContainer"></div>
+                </div>
+                <button class="reels__btn reels__btn_next" id="reelsNextBtn">›</button>
+            </div>
+        </section>
+
+        <!-- Категории -->
+        <section class="categories">
+            <h2 class="categories__title">Категории</h2>
+            <div class="categories__grid" id="categoryGrid"></div>
+        </section>
+
+        <!-- Расширенный список уходки -->
+        <section class="products">
+            <h2 class="products__title">Уходовая косметика</h2>
+            <div class="products__grid" id="careGrid"></div>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+        <p class="footer__text">MajeCos — твой бережный уход</p>
+        <p class="footer__copyright">&copy;2026 Автор: Сабина Нуртдинова | Дизайн и разработка в рамках учебного проекта</p>
+        <p class="footer__disclaimer">Данный сайт является учебной работой, не интернет-магазином. Все товары и бренды представлены в демонстрационных целях.</p>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
